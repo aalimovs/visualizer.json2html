@@ -19,7 +19,7 @@
 
 <script>
     
-    var jsonDemo = {"header":{"version":"0.0.8","status":1,"message":""},"response":[{"productLine":"Classic Cars","products":38},{"productLine":"Motorcycles","products":13},{"productLine":"Planes","products":12},{"productLine":"Ships","products":9},{"productLine":"Trains","products":3},{"productLine":"Trucks and Buses","products":11},{"productLine":"Vintage Cars","products":24}]};
+    var json = {"header":{"version":"0.0.8","status":1,"message":""},"response":[{"product":"Classic Cars","count":38},{"product":"Motorcycles","count":13},{"product":"Planes","count":12},{"product":"Ships","count":9},{"product":"Trains","count":3},{"product":"Trucks and Buses","count":11},{"product":"Vintage Cars","count":24}]};
     
     $(function(){
         
@@ -27,7 +27,7 @@
     	var _visualizer = new visualizer($("#output"));
     	
     	//Visualize the demo json object
-    	_visualizer.visualize(jsonDemo);
+    	_visualizer.visualize(json);
     
     });
 </script>
